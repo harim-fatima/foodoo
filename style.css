@@ -44,8 +44,8 @@ ul li a:hover{
     color:red ;
 
 }
-.header{
-    background-image:url("pizza-.jpg");
+.background{
+    background-image:url("images/pizza.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ font-family: cursive;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    background-image:url("reservation.jpg");
+    background-image:url("images/reservation.jpg");
 }
 .card-container{
     font-size:25px;
