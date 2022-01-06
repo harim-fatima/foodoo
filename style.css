@@ -1,22 +1,23 @@
-*{
-    
+* {
+
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 
-body{
-     margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-    
-    }
-.main{
-    width:100%;
 }
-nav{
-   
-    padding:0px 0px;
+
+.main {
+    width: 100%;
+}
+
+nav {
+
+    padding: 0px 0px;
     width: 100%;
     background-color: rgb(230, 227, 227);
     height: 50px;
@@ -25,45 +26,63 @@ nav{
     justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0px 0px;
+        width: 100%;
+        background-color: rgb(230, 227, 227);
+        box-shadow: 0 2px 3px grey;
+    }
+}
 
-
-a{
+a {
     text-decoration: none;
     color: black;
     font-size: 15px;
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Nunito', sans-serif;
     transition: 0.3s all ease;
 
 }
-ul li{
+
+ul li {
     float: left;
     padding: 10px 20px;
     list-style: none;
 }
-ul li a:hover{
-    color:red ;
+
+ul li a:hover {
+    color: red;
 
 }
-.background{
-    background-image:url("images/pizza.jpg");
+
+.background {
+    background-image: url("images/pizza.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
-.Lunch{
-  
-    text-align: center; 
-     margin: auto;
-     margin-top:10% ;
-     
+
+.lunch {
+
+    text-align: center;
+    margin: auto;
     font-family: cursive;
     font-size: larger;
     font-weight: 300;
     font-style: bold;
 }
 
-   table{
+@media screen and (max-width: 600px) {
+    .lunch {
+        text-align: left;
+        margin: auto;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: bold;
+    }
+}
+
+table {
     margin: auto;
     margin-top: 3%;
     text-align: center;
@@ -71,31 +90,50 @@ ul li a:hover{
     font-size: larger;
     font-weight: 300;
     font-style: bold;
-    width:500px;
-    height:100px;
+    width: 500px;
+    height: 100px;
 
-   }
-   td:hover{
-         color:red;
-      }
- tr{
-   
-       text-align: center;
-       cursor: pointer;
-   } 
+}
+
+td:hover {
+    color: red;
+}
+
+tr {
+    text-align: center;
+    cursor: pointer;
+}
+
 h1 {
     margin-top: 2%;
     text-align: center;
     font-family: cursive;
 }
 
-p{
+@media screen and (max-width: 600px) {
+    h1 {
+        margin-top: 2%;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+p {
     text-align: center;
     font-family: cursive;
-  font-size: large;
+    font-size: large;
 }
-.banner{
-font-family: cursive; 
+
+@media screen and (max-width: 600px) {
+    p {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
+    }
+}
+
+.banner {
+    font-family: cursive;
 
     background-position: center;
     background-size: cover;
@@ -106,14 +144,28 @@ font-family: cursive;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    background-image:url("images/reservation.jpg");
+    background-image: url("images/reservation.jpg");
 }
-.card-container{
-    font-size:25px;
+
+@media screen and (max-width: 600px) {
+    .banner {
+        font-family: 'Times New Roman', Times, serif;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        padding-bottom: 20px;
+        background-image: url("images/reservation.jpg");
+    }
+}
+
+.card-container {
+    font-size: 25px;
     display: grid;
     grid-template-columns: 120px 120px;
 }
-form select, form input{
+
+form select, form input {
     display: block;
     font-family: cursive;
     width: 100%;
@@ -122,75 +174,107 @@ form select, form input{
     border: none;
     border-bottom: 1px solid #eee;
     font-weight: 300;
-
 }
-form input[type=submit]{
+
+@media screen and (max-width: 600px) {
+    form select, form input {
+        display: block;
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        margin: 5px 2px;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+form input[type=submit] {
     background: #38886c;
     border-radius: 4px;
-    cursor:pointer;
+    cursor: pointer;
+
 }
-.wrapper{
-    
-  
+
+.wrapper {
     background-position: center;
-   
-    margin-top:10%;
+    margin-top: 10%;
     margin-left: 25%;
-    width:50%;
-    padding:0 20px;
- 
+    width: 50%;
+    padding: 0 20px;
     font-family: cursive;
-
 }
 
-.contact-form{
+@media screen and (max-width: 600px) {
+    .wrapper {
+        background-position: center;
+        margin-top: 10%;
+        margin-left: 25%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+.contact-form {
     max-width: 550px;
     margin: 0 auto;
-    background:#38886c;
+    background: #38886c;
     padding: 30px;
     border-radius: 5px;
     display: flex;
 }
-.input-fields, .msg{
+
+.input-fields, .msg {
     width: 48%;
 }
-.input-field .input, .msg textarea{
+
+.input-field .input, .msg textarea {
     margin: 10px 0;
-    background:transparent;
+    background: transparent;
     border: 0;
     border-bottom: 2px solid #c5ecfd;
     padding: 10px;
-    
+
     width: 100%;
 }
-.msg textarea{
+
+.msg textarea {
     height: 100px;
 }
-::-webkit-input-placeholder{
-    color:#010c11 ;
+
+::-webkit-input-placeholder {
+    color: #010c11;
     border-bottom: 2px solid #c5ecfd;
 }
-.btn{
+
+.btn {
     background: #ffffff;
     text-align: center;
     padding: 15px;
     border-radius: 5px;
     color: black;
-    cursor:pointer ;
+    cursor: pointer;
 }
-@media screen and (max_width: 600px){
-    .contact_form{
+
+@media screen and (max_width: 600px) {
+    .contact_form {
         flex-direction: column;
     }
-    .msg textarea{
-        height:80px;
+
+    .msg textarea {
+        height: 80px;
     }
-    .input-field, .msg{
+
+    .input-field, .msg {
         width: 100%;
     }
 }
-footer{
+
+footer {
     margin-top: 29%;
     margin-left: 45%;
-  
+}
+
+@media screen and (max_width: 600px) {
+    footer {
+        margin-bottom: 2%;
+        margin-left: 25%;
+    }
 }
