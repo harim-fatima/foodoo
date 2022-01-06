@@ -1,0 +1,11 @@
+logo color= black, #07CAD7
+ font-family: 'Nunito',sans-serif;
+for lunch page, font-family:cursive;
+submit button color:  #38886c'
+
+figma link
+https://www.figma.com/file/1gOL65EwRmRHJ4wOZjSB5y/desktop-website?node-id=9%3A53
+
+https://github.com/harim-fatima/foodoo
+
+https://foodoo1.herokuapp.com/

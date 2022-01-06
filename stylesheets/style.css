@@ -56,7 +56,7 @@ ul li a:hover {
 }
 
 .background {
-    background-image: url("images/pizza.jpg");
+    background-image: url("../images/pizza.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@ p {
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    background-image: url("images/reservation.jpg");
+    background-image: url("../images/reservation.jpg");
 }
 
 @media screen and (max-width: 600px) {
@@ -155,7 +155,7 @@ p {
         background-repeat: no-repeat;
         height: 100vh;
         padding-bottom: 20px;
-        background-image: url("images/reservation.jpg");
+        background-image: url("../images/reservation.jpg");
     }
 }
 
